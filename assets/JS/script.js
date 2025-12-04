@@ -1,3 +1,12 @@
+// -----Botão de Retorno-----
+window.addEventListener("scroll", function () {
+    const btn = document.getElementById("topButton");
+    if (window.scrollY > 400) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+});
 // ----Máscara de entrada----
 //.....Telefone.....
 document.getElementById('telefone').addEventListener('input', function (e) {
@@ -54,7 +63,7 @@ function calcularinvestimento() {
             .replace(/\./g, "")     // **remove pontos de milhar
             .replace(",", ".")      // **vírgula -> ponto
     );
-// .....Requerimento.....
+    // .....Requerimento.....
     if (!nome || !telefone || !email || !cpf || isNaN(investimentoinicial) || prazo <= 0) {
         return alert("Preencha todos os campos corretamente!");
     }

@@ -1,34 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <title>Investimento</title>
+    <title>InvestLab</title>
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <div class="login-box">
-                <label for="nome">Nome:</label>
-                <input type="text" id="Nome" placeholder="Nome Completo" maxlength="50" required>
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" placeholder="telefone" maxlength="15" required>
-                <label for="e-mail">E-mail</label>
-                <input type="email" id="email" placeholder="aaaaa@gmial.com" maxlength="30" required>
-                <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="15" required>
-                <label for="valor">Investimento inicial:</label>
-                <input type="text" id="valor" oninput="formatarMoeda(this)" required>
-                <label for="meses">Tempo de Investimento:</label>
-                <input type="number" id="meses" placeholder="Em meses" maxlength="3" required>
-                <button onclick="calcularinvestimento()">Calcular</button>
+    <nav class="navbar">
+        <div class="logo">InvestLab</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <section id="inicio">
+        <h2>Bem-vindo à InvestLab</h2>
+        <p>A plataforma onde você aprende, simula e evolui no mundo dos investimentos.</p>
+        <div class="botao">
+            <button type="submit" id="botaosimulacao"><a href="cadastro.html">Faça sua simulação</a></button>
+        </div>
+    </section>
+    <section id="sobre">
+        <h2>Sobre a InvestLab</h2>
+        <p>A InvestLab é uma plataforma que torna investimentos mais simples e acessíveis, unindo simuladores, conteúdo
+            educativo e ferramentas de acompanhamento.</p>
+
+        <div class="cards-container">
+            <div class="card">Carteiras virtuais e simulações</div>
+            <div class="card">Conteúdo didático para todos os níveis</div>
+            <div class="card">Dashboards e alertas para acompanhar seu progresso</div>
+        </div>
+    </section>
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <p>Veja os principais recursos oferecidos pela InvestLab.</p>
+    </section>
+
+    <section id="contatos">
+        <h2>Contatos</h2>
+        <p>Fale com nossa equipe para suporte, dúvidas ou sugestões.</p>
+        <div class="cards-container">
+            <div class="card2">
+                <h3 class="contato">Telefones</h3>
+                <li>Central de Atendimento: (11) 4002-1587</li>
+                <li>Suporte ao Cliente: (11) 3500-4821</li>
+                <li>Ouvidoria: 0800 912 4455</li>
+                </ul>
+            </div>
+            <div class="card2">
+                <h3 class="contato">E-mails</h3>
+                <ul>
+                    <li>Atendimento geral: contato@investlab.com.br</li>
+                    <li>Suporte técnico: suporte@investlab.com.br</li>
+                    <li>Comercial: comercial@investlab.com.br</li>
+                    <li>Parcerias: parcerias@investlab.com.br</li>
+                </ul>
             </div>
         </div>
-    </main>
+    </section>
+    <button id="topButton" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </button>
+
     <script src="assets/JS/script.js"></script>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

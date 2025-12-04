@@ -1,21 +1,152 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(222, 235, 222);
+    margin: 0;
+    background: #e9f9ec;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*--------- Menu-------- */
-nav {
-    width: 100%;
-    height: 60px;
-    background-color: beige;
-    border-radius: 8px;
+
+.navbar {
+    padding: 15px 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #214d2a;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.nav-links a:hover {
+    color: #214d2a;
+    font-weight: bold;
+}
+
+/* -----Corpo----- */
+section {
+    padding: 80px 90px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #214d2a;
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 800;
     text-align: center;
 }
 
-nav a {
-    text-decoration: none;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 1100px;
+    text-align: center;
+}
+
+/* -----cards----- */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    width: 260px;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    transition: transform .25s ease, box-shadow .25s ease;
+    border-left: 4px solid green;
+    border-right: 4px solid green;
+}
+
+.card2 {
+    width: 400px;
+    height: 220px;
+    background: #ffffff;
+    align-items: center;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 18px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    border-left: 4px solid green;
+
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* .....botao para subir..... */
+#topButton {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: none;
+    background: #214d2a;
+    color: white;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+#topButton:hover {
+    background: #2c6b38;
+}
+
+/* .....botao simulação.....*/
+.botao {
+
+    display: flex;
+    justify-content: center;
+}
+
+#botaosimulacao {
+    width: 200px;
+    height: 50px;
     font-size: larger;
-    padding-left: 10px;
+    padding: auto;
+}
+
+#botaosimulacao a {
+    text-decoration: none;
+    color: white;
 }
 
 /* ---------Calculadora--------- */
@@ -44,11 +175,13 @@ button {
     margin: 8px 0;
     border-radius: 4px;
     border: 1px solid #ccc;
- 
+
 }
-label{
-       color: rgb(1, 53, 1);
+
+label {
+    color: rgb(1, 53, 1);
 }
+
 button {
     width: 97%;
     background: rgb(61, 169, 61);
@@ -59,5 +192,5 @@ button {
 }
 
 button:hover {
-    background:green;
+    background: green;
 }
