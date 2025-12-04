@@ -1,0 +1,63 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(222, 235, 222);
+}
+
+/*--------- Menu-------- */
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: beige;
+    border-radius: 8px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: larger;
+    padding-left: 10px;
+}
+
+/* ---------Calculadora--------- */
+.container {
+    display: flex;
+}
+
+.login-box {
+    justify-self: start;
+    width: 350px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #aaa;
+    text-align: center;
+    border-left: 5px solid green;
+    border-right: 5px solid green;
+}
+
+input,
+select,
+button {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+ 
+}
+label{
+       color: rgb(1, 53, 1);
+}
+button {
+    width: 97%;
+    background: rgb(61, 169, 61);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background:green;
+}
