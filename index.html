@@ -9,19 +9,21 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">InvestLab</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">InvestLab</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <section id="inicio">
         <h2>Bem-vindo à InvestLab</h2>
         <p>A plataforma onde você aprende, simula e evolui no mundo dos investimentos.</p>
-        <div class="botao">
+        <div class="botao1">
             <button type="submit" id="botaosimulacao"><a href="cadastro.html">Faça sua simulação</a></button>
         </div>
     </section>
@@ -29,16 +31,39 @@
         <h2>Sobre a InvestLab</h2>
         <p>A InvestLab é uma plataforma que torna investimentos mais simples e acessíveis, unindo simuladores, conteúdo
             educativo e ferramentas de acompanhamento.</p>
-
         <div class="cards-container">
             <div class="card">Carteiras virtuais e simulações</div>
             <div class="card">Conteúdo didático para todos os níveis</div>
             <div class="card">Dashboards e alertas para acompanhar seu progresso</div>
         </div>
     </section>
+
     <section id="servicos">
         <h2>Serviços</h2>
         <p>Veja os principais recursos oferecidos pela InvestLab.</p>
+        <div class="cards-container">
+            <div class="card1">
+                <h3>Plataforma Inteligente <img src="assets/img/lampada.png" alt="uma lâmpada acessa"></h3>
+                <p>Ferramentas para análise, gerenciamento e acompanhamento de investimentos em um só lugar.</p>
+            </div>
+            <div class="card1">
+                <h3>Automação de Investimentos <img src="assets/img/robo.png" alt="robô verde"></h3>
+                <p>Robôs configuráveis que executam operações automáticas baseadas em estratégias definidas.</p>
+            </div>
+            <div class="card1">
+                <h3>Monitoramento em Tempo Real <img src="assets/img/relogio.png" alt="relógio verde"></h3>
+                <p>Acompanhe cotações, indicadores e alertas personalizados ao vivo.</p>
+            </div>
+            <div class="card1">
+                <h3>Educação Financeira <img src="assets/img/livro.png" alt="livro verde"></h3>
+                <p>Cursos, artigos e materiais para aprender finanças do zero ao avançado.</p>
+            </div>
+            <div class="card1">
+                <h3>Simulador de Rendimento <img src="assets/img/grafico.png" alt="grafico verde"></h3>
+                <p>Simule ganhos e compare diferentes tipos de investimentos rapidamente.</p>
+            </div>
+        </div>
+
     </section>
 
     <section id="contatos">
@@ -66,11 +91,13 @@
     <button id="topButton" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
         ↑
     </button>
-
-    <script src="assets/JS/script.js"></script>
-    <footer>
-
+    <footer class="footer">
+        <div class="dados">
+            <p>@ 2025 InvestLab- Todos os direitos Reservados</p>
+            <p>Desenvolvido por Tania Letícia</p>
+        </div>
     </footer>
+    <script src="assets/JS/script.js"></script>
 </body>
 
 </html>

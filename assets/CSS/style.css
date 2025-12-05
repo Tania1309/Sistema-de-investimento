@@ -71,6 +71,7 @@ p {
     justify-content: center;
     gap: 30px;
     margin-top: 50px;
+
 }
 
 .card {
@@ -90,6 +91,30 @@ p {
     border-right: 4px solid green;
 }
 
+.card1 {
+    width: 600px;
+    text-align: center;
+    background: #ffffff;
+    border-left: 4px solid green;
+    box-shadow: 0 6px 14px green (0, 0, 0, 0.12);
+
+}
+
+.card1 img {
+    max-width: 30px;
+    border-radius: 10px;
+    align-items: end;
+}
+
+.card1 h3 {
+    padding-top: 40px;
+}
+
+.card1 p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
 .card2 {
     width: 400px;
     height: 220px;
@@ -100,6 +125,7 @@ p {
     border-radius: 18px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
     border-left: 4px solid green;
+
 
 }
 
@@ -130,9 +156,13 @@ p {
     background: #2c6b38;
 }
 
-/* .....botao simulação.....*/
+/* .....botão simulação.....*/
 .botao {
+    display: flex;
+    justify-content: center;
+}
 
+.botao1 {
     display: flex;
     justify-content: center;
 }
@@ -147,6 +177,32 @@ p {
 #botaosimulacao a {
     text-decoration: none;
     color: white;
+}
+
+/* botão voltar*/
+#botaosair {
+    width: 100px;
+    height: 50px;
+    font-size: larger;
+    padding: auto;
+}
+
+#botaosair a {
+    text-decoration: none;
+    color: white;
+}
+
+/* footer */
+.footer {
+
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.dados p {
+    display: grid;
+
 }
 
 /* ---------Calculadora--------- */
@@ -193,4 +249,34 @@ button {
 
 button:hover {
     background: green;
+}
+
+/* Responsividade */
+@media (max-width:768px) {
+    .cards-container {
+        flex-wrap: wrap;
+    }
+
+    .card2 {
+        font-size: 18px;
+    }
+
+    .navbar {
+        font-size: small;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 80px;
+    }
+
+    .nav-links {
+        margin-right: 80px;
+    }
+
+    .botao {
+
+        margin-left: 100px;
+    }
 }
